@@ -1,6 +1,9 @@
 Feature: Playing Hangman
 
 Scenario: The initial word is masked
+Given a hangman game with the word "hangman"
+When starting the game
+Then the mask is "_______"
 
 Scenario: Guessing a letter that appears once reveals that letter
 
