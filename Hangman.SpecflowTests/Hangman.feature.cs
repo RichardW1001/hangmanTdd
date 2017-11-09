@@ -75,11 +75,11 @@ namespace Hangman.SpecflowTests
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5
-testRunner.Given("a hangman game with the word \"hangman\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("a game with the word hangman", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 6
 testRunner.When("starting the game", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 7
-testRunner.Then("the mask is \"_______\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("the mask is _______", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

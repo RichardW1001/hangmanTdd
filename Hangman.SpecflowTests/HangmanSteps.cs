@@ -10,8 +10,14 @@ namespace Hangman.SpecflowTests
         private string _word;
         private HangmanGame _game;
 
-        [Given( @"a hangman game with the word ""(.*)""" )]
-        public void GivenAHangmanGameWithTheWord( string word )
+        //[Given( @"a hangman game with the word ""(.*)""" )]
+        //public void GivenAHangmanGameWithTheWord( string word )
+        //{
+        //    _word = word;
+        //}
+
+        [Given( @"a game with the word (.*)" )]
+        public void GivenAGameWithTheWord( string word )
         {
             _word = word;
         }
@@ -24,7 +30,7 @@ namespace Hangman.SpecflowTests
             _game = target.NewGame(_word);
         }
 
-        [Then( @"the mask is ""(.*)""" )]
+        [Then( @"the mask is (.*)" )]
         public void ThenTheMaskIs( string mask )
         {
             Assert.AreEqual(mask, _game.Mask);

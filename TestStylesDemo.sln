@@ -5,6 +5,19 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman", "Hangman\Hangman.csproj", "{57D88A93-FCC7-439B-AB9F-D48CDCDC8337}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman.NUnitTests", "Hangman.NUnitTests\Hangman.NUnitTests.csproj", "{CC3C40E1-D342-4E9C-B843-85935820BD93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman.XUnitTests", "Hangman.XUnitTests\Hangman.XUnitTests.csproj", "{3D37F890-69D6-4F89-ADEE-CAB3A4B82552}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{57CCA044-9A83-49A7-9650-EE6D43FA05A8}"
+	ProjectSection(SolutionItems) = preProject
+		HangmanRules.txt = HangmanRules.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman.SpecflowTests", "Hangman.SpecflowTests\Hangman.SpecflowTests.csproj", "{5C0C4D66-378E-4FAB-9E79-350DBFDA143C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman.MSpecTests", "Hangman.MSpecTests\Hangman.MSpecTests.csproj", "{975A0D04-02CC-40FF-B2A0-41AB7425BA72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +28,22 @@ Global
 		{57D88A93-FCC7-439B-AB9F-D48CDCDC8337}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57D88A93-FCC7-439B-AB9F-D48CDCDC8337}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57D88A93-FCC7-439B-AB9F-D48CDCDC8337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3C40E1-D342-4E9C-B843-85935820BD93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3C40E1-D342-4E9C-B843-85935820BD93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3C40E1-D342-4E9C-B843-85935820BD93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3C40E1-D342-4E9C-B843-85935820BD93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D37F890-69D6-4F89-ADEE-CAB3A4B82552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D37F890-69D6-4F89-ADEE-CAB3A4B82552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D37F890-69D6-4F89-ADEE-CAB3A4B82552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D37F890-69D6-4F89-ADEE-CAB3A4B82552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0C4D66-378E-4FAB-9E79-350DBFDA143C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0C4D66-378E-4FAB-9E79-350DBFDA143C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0C4D66-378E-4FAB-9E79-350DBFDA143C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0C4D66-378E-4FAB-9E79-350DBFDA143C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975A0D04-02CC-40FF-B2A0-41AB7425BA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975A0D04-02CC-40FF-B2A0-41AB7425BA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975A0D04-02CC-40FF-B2A0-41AB7425BA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975A0D04-02CC-40FF-B2A0-41AB7425BA72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

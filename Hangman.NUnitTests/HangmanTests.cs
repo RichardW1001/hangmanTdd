@@ -12,7 +12,7 @@ namespace Hangman.NUnitTests
 
             var game = target.NewGame("Hangman");
 
-            Assert.AreEqual("_______", game.Word);
+            Assert.AreEqual("_______", game.Mask);
         }
     }
 }

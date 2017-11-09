@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Hangman
 {
@@ -6,7 +7,13 @@ namespace Hangman
     {
         public HangmanGame NewGame(string word)
         {
-            throw new NotImplementedException();
+            var mask = string.Join("", Enumerable.Range(0, word.Length).Select(_ => "_"));
+
+            return new HangmanGame
+            {
+                Mask = mask,
+                Word = word
+            };
         }
     }
 }
