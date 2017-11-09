@@ -1,0 +1,15 @@
+Feature: Playing Hangman
+
+Scenario: The initial word is masked
+
+Scenario: Guessing a letter that appears once reveals that letter
+
+Scenario: Guessing a letter that appears multiple times reveals all instances
+
+Scenario: Guessing a letter incorrectly costs a life
+
+Scenario: Repeating an incorrect guess has no impact
+
+Scenario: Guessing the last letter wins the game
+
+Scenario: Losing the last life loses the game
