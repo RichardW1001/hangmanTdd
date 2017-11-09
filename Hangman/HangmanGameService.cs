@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
 namespace Hangman
 {
@@ -13,6 +12,33 @@ namespace Hangman
             {
                 Mask = mask,
                 Word = word
+            };
+        }
+
+        public HangmanGame Guess(char guess, HangmanGame game)
+        {
+            if (game.Word.Contains(guess))
+            {
+                
+            }
+
+            var newMask = "";
+            for ( var i = 0; i < game.Word.Length; i++ )
+            {
+                if ( game.Word[ i ] == guess )
+                {
+                    newMask += guess;
+                }
+                else
+                {
+                    newMask += game.Mask[ i ];
+                }
+            }
+
+            return new HangmanGame
+            {
+                Word = game.Word,
+                Mask = newMask
             };
         }
     }

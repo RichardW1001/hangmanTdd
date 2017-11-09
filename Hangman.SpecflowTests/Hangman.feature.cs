@@ -65,21 +65,36 @@ namespace Hangman.SpecflowTests
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("The initial word is masked")]
-        [NUnit.Framework.CategoryAttribute("newGame")]
-        [NUnit.Framework.CategoryAttribute("hangman")]
         public virtual void TheInitialWordIsMasked()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The initial word is masked", new string[] {
-                        "newGame",
-                        "hangman"});
-#line 4
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The initial word is masked", ((string[])(null)));
+#line 3
 this.ScenarioSetup(scenarioInfo);
-#line 5
+#line 4
 testRunner.Given("a game with the word hangman", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
+#line 5
 testRunner.When("starting the game", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 7
+#line 6
 testRunner.Then("the mask is _______", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Guessing a letter that appears once reveals that letter")]
+        public virtual void GuessingALetterThatAppearsOnceRevealsThatLetter()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Guessing a letter that appears once reveals that letter", ((string[])(null)));
+#line 8
+this.ScenarioSetup(scenarioInfo);
+#line 9
+testRunner.Given("a game with the word hangman", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 10
+testRunner.And("the mask is currently _______", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+testRunner.When("guessing m", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
+testRunner.Then("the mask is ____m__", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
